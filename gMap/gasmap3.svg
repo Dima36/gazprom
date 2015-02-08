@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="gasmapsvg"
+   version="1.1"
+   width="1200"
+   height="775"
+   xml:space="preserve"
+   sodipodi:docname="gasmap3.svg"
+   inkscape:version="0.48.4 r9939"><metadata
+   id="metadata19120"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs19036" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   id="namedview2987"
+   showgrid="false"
+   inkscape:zoom="4.24"
+   inkscape:cx="301.50754"
+   inkscape:cy="727.40489"
+   inkscape:window-width="1396"
+   inkscape:window-height="776"
+   inkscape:window-x="-4"
+   inkscape:window-y="-3"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="viz_menu" />
+   <g
+   id="gasbackcont" />
+   <g
+   id="gas_map_svg_all">
+<g
+   id="gasMapG" />
+<text
+   id="gasmaptittle"
+   class="gasmap_aux"
+   x="246.4456"
+   y="80"
+   style="font-size:12px"><tspan
+     id="tspan3025"
+     sodipodi:role="line"
+     y="80"
+     style="font-size:46px;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none; letter-spacing: 1.2px">МИРОВОЙ ГАЗОВЫЙ РЫНОК</tspan></text>
+
+
+
+
+<g
+   id="gascompare"
+   style="display:none;">
+
+   <g
+   class="gasmap_aux"
+   transform="matrix(0.814532,0,0,0.814532,111.281,59.5468)"
+   id="g12587"><path
+   d="m 765,855.911 -330,0 0,-45.118 330,0 0,45.118 z"
+   style="fill:#00213e;fill-opacity:1;fill-rule:nonzero;stroke-width:1.534624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="path5363"
+   inkscape:connector-curvature="0" />
+<text
+   style="font-size:12px"
+   y="838.664"
+   x="502.85516"
+   id="text5365"><tspan
+     style="font-size:15px;font-variant:normal;font-weight:bold;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-rule:nonzero;stroke:none"
+     x="502.85516 511.63321 519.68323 527.78918 535.57318 543.58118 551.71521 558.67322 566.38721 570.50323 579.16919 587.27521 595.2832 603.2912 613.95917 621.5752 625.69122 632.46716 640.36316 647.1532 655.13318 663.21118 671.26117 677.79919 685.90521 691.09924 699.23322 709.13123 717.11121 725.18921 733.2392 739.77722"
+     y="838.664"
+     id="tspan5367">Сравнить данные экспорта/импорта</tspan></text>
+
+  <path
+   id="path5397"
+   d="m 485.344,839.75 a 1.25012,1.25012 0 0 0 -0.75,2.125 l 7.562,7.563 a 1.25012,1.25012 0 1 0 1.75,-1.75 l -7.562,-7.563 a 1.25012,1.25012 0 0 0 -1,-0.375 z"
+   style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#5dc4ed;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans"
+   inkscape:connector-curvature="0" />
+
+
+   <g
+   id="g17925"
+   transform="matrix(0.887219,0,0,0.887219,51.2342,93.5528)"><path
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#5dc4ed;fill-opacity:1;stroke:none;stroke-width:2.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans"
+     d="m 455.406,817.906 a 1.25012,1.25012 0 0 0 -1.125,1.25 l 0,30.875 a 1.25012,1.25012 0 0 0 1.25,1.25 l 24.188,0 a 1.25012,1.25012 0 0 0 1.25,-1.25 l 0,-30.875 a 1.25012,1.25012 0 0 0 -1.25,-1.25 l -24.188,0 a 1.25012,1.25012 0 0 0 -0.125,0 z m 1.375,2.5 21.688,0 0,28.375 -21.688,0 0,-28.375 z"
+     id="path5377"
+     inkscape:connector-curvature="0" /><path
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#5dc4ed;fill-opacity:1;stroke:none;stroke-width:2.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans"
+     d="m 460.625,825.469 a 1.25623,1.25623 0 1 0 0.25,2.5 l 13.531,0 a 1.25012,1.25012 0 1 0 0,-2.5 l -13.531,0 a 1.25012,1.25012 0 0 0 -0.25,0 z"
+     id="path5381"
+     inkscape:connector-curvature="0" /><path
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#5dc4ed;fill-opacity:1;stroke:none;stroke-width:2.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans"
+     d="m 460.75,830.719 a 1.25156,1.25156 0 1 0 0.125,2.5 l 13.531,0 a 1.25012,1.25012 0 1 0 0,-2.5 l -13.531,0 a 1.25012,1.25012 0 0 0 -0.125,0 z"
+     id="path5385"
+     inkscape:connector-curvature="0" /><path
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#5dc4ed;fill-opacity:1;stroke:none;stroke-width:2.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans"
+     d="m 460.75,835.969 a 1.25156,1.25156 0 1 0 0.125,2.5 l 13.531,0 a 1.25012,1.25012 0 1 0 0,-2.5 l -13.531,0 a 1.25012,1.25012 0 0 0 -0.125,0 z"
+     id="path5389"
+     inkscape:connector-curvature="0" /><path
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#5dc4ed;fill-opacity:1;stroke:none;stroke-width:2.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans"
+     d="m 460.875,841.219 a 1.25012,1.25012 0 1 0 0,2.5 l 13.531,0 a 1.25012,1.25012 0 1 0 0,-2.5 l -13.531,0 z"
+     id="path5393"
+     inkscape:connector-curvature="0" /><path
+     d="m 487.624,834.594 c 0,-4.357 -3.533,-7.89 -7.891,-7.89 -4.357,0 -7.888,3.533 -7.888,7.89 0,4.357 3.531,7.89 7.888,7.89 4.358,0 7.891,-3.533 7.891,-7.89"
+     style="fill:#00213e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     id="path5401"
+     inkscape:connector-curvature="0" /></g><path
+   id="path5405"
+   d="m 476.85,825.925 c -4.465,0 -8.096,3.631 -8.096,8.096 0,4.464 3.631,8.096 8.096,8.096 4.465,0 8.123,-3.632 8.123,-8.096 0,-4.465 -3.658,-8.096 -8.123,-8.096 z m 0,2.218 c 3.267,0 5.905,2.611 5.905,5.878 0,3.266 -2.638,5.878 -5.905,5.878 -3.267,0 -5.878,-2.612 -5.878,-5.878 0,-3.267 2.611,-5.878 5.878,-5.878 z"
+   style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#5dc4ed;fill-opacity:1;stroke:none;stroke-width:2.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans"
+   inkscape:connector-curvature="0" /></g>
+
+</g>
+
+
+<g
+   id="viz_menu"><g
+   transform="matrix(1.25,0,0,-1.25,-1.340392,1333.76)"
+   id="viz_menu_sankey"><rect
+     style="opacity:0;fill:#f0f0f0;fill-opacity:1;stroke:none"
+     id="rect3185-3"
+     width="56.106594"
+     height="35.039051"
+     x="180.31815"
+     y="1031.2164" /><path
+     transform="matrix(0.8,0,0,-0.8,0,1067.01)"
+     id="path3101"
+     d="m 232.938,9.4375 0,1.25 14.562,0 c 1.209,0 3.321,0.525 4.375,1.125 l 19.687,11.0625 c 0.456,0.2579 1.015,0.4326 1.594,0.625 -0.582,0.1931 -1.136,0.4326 -1.594,0.6875 L 251.875,35.25 c -1.054,0.5875 -3.166,1.125 -4.375,1.125 l -14.562,0 0,1.25 14.562,0 c 1.541,0 3.623,-0.55 4.969,-1.3125 l 19.719,-11.0313 c 1.053,-0.6 3.166,-1.125 4.374,-1.125 l 9.188,0 c 0.276,0.9918 1.203,1.7188 2.281,1.7188 1.079,0 1.974,-0.727 2.25,-1.7188 l 0.06,0 0,-0.4062 c 0,-0.074 0.03,-0.1428 0.03,-0.2188 0,-0.076 -0.02,-0.1446 -0.03,-0.2187 l 0,-0.4063 -0.06,0 c -0.273,-0.9966 -1.168,-1.7187 -2.25,-1.7187 -1.082,0 -2.008,0.7221 -2.281,1.7187 l -9.188,0 c -1.208,0 -3.321,-0.5374 -4.374,-1.125 L 252.469,10.7188 C 251.123,9.96875 249.041,9.4375 247.5,9.4375 l -14.562,0 z"
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#5dc4ed;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+     inkscape:connector-curvature="0" /><path
+     transform="matrix(0.8,0,0,-0.8,0,1067.01)"
+     id="path3113"
+     d="m 277.062,9.4375 c -1.485,0 -3.514,0.5312 -4.812,1.2813 l -19,11.0624 c -1.016,0.5877 -3.023,1.125 -4.188,1.125 l -10.874,0 c -0.04,-0.1813 -0.117,-0.3637 -0.188,-0.5312 -0.08,-0.1807 -0.172,-0.3395 -0.281,-0.5 -0.07,-0.1079 -0.133,-0.2154 -0.219,-0.3125 -0.04,-0.045 -0.08,-0.082 -0.125,-0.125 -0.127,-0.1283 -0.258,-0.24 -0.406,-0.3437 -0.02,-0.017 -0.04,-0.047 -0.06,-0.063 -0.05,-0.033 -0.103,-0.064 -0.156,-0.094 -0.04,-0.023 -0.08,-0.042 -0.125,-0.062 -0.109,-0.055 -0.228,-0.083 -0.344,-0.125 -0.07,-0.026 -0.143,-0.042 -0.219,-0.062 -0.06,-0.017 -0.122,-0.049 -0.187,-0.062 -0.191,-0.039 -0.391,-0.062 -0.594,-0.062 -1.635,0 -2.968,1.3314 -2.969,2.9687 0,1.6377 1.334,2.9688 2.969,2.9688 0.297,0 0.573,-0.075 0.844,-0.1562 0.05,-0.015 0.108,-0.014 0.156,-0.031 0.159,-0.058 0.324,-0.1363 0.469,-0.2187 0.145,-0.084 0.278,-0.175 0.406,-0.2813 0.222,-0.181 0.401,-0.3882 0.563,-0.625 0.106,-0.1555 0.205,-0.3253 0.281,-0.5 0,-0.021 0.02,-0.041 0.03,-0.062 0.06,-0.1556 0.12,-0.3014 0.157,-0.4688 l 10.874,0 c 1.165,0 3.172,0.5251 4.188,1.125 l 19,11.0313 c 1.298,0.7625 3.327,1.3125 4.812,1.3125 l 13.282,0 0,-1.25 -13.282,0 c -1.163,0 -3.203,-0.5375 -4.218,-1.125 l -19,-11.0625 c -0.439,-0.2537 -0.979,-0.495 -1.532,-0.6875 0.55,-0.1918 1.095,-0.3684 1.532,-0.625 l 19,-11.0625 c 1.015,-0.6 3.053,-1.125 4.218,-1.125 l 13.282,0 0,-1.25 -13.282,0 z m -41.781,12.375 c 0.12,0 0.231,0.01 0.344,0.031 0.338,0.067 0.643,0.2378 0.875,0.4687 0.232,0.2309 0.401,0.5371 0.469,0.875 0.02,0.1126 0.03,0.2234 0.03,0.3437 0,0.1204 0,0.2308 -0.03,0.3438 -0.07,0.3389 -0.237,0.6418 -0.469,0.875 -0.232,0.2332 -0.537,0.4006 -0.875,0.4688 -0.113,0.022 -0.224,0.031 -0.344,0.031 -0.731,0 -1.342,-0.4295 -1.593,-1.0625 -0.04,-0.1034 -0.07,-0.1995 -0.09,-0.3125 -0.02,-0.1128 -0.03,-0.2234 -0.03,-0.3438 0,-0.1203 0,-0.2311 0.03,-0.3437 0.158,-0.7895 0.846,-1.375 1.687,-1.375 z"
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+     inkscape:connector-curvature="0" /></g><text
+   style="font-size:15px;text-align:end;text-anchor:end"
+   id="text3143"
+   x="210.87849"
+   y="11.010061"><tspan
+     style="font-size:13.75px;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#57c3ef;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:PT Sans;-inkscape-font-specification:PTSans-Regular"
+     sodipodi:role="line"
+     id="tspan3145"
+     x="210.87849"
+     y="11.010061">Данные</tspan><tspan
+     style="font-size:13.75px;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#57c3ef;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:PT Sans;-inkscape-font-specification:PTSans-Regular"
+     sodipodi:role="line"
+     id="tspan3147"
+     x="210.87849"
+     y="28.197561">в виде</tspan><tspan
+     style="font-size:13.75px;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#57c3ef;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:PT Sans;-inkscape-font-specification:PTSans-Regular"
+     sodipodi:role="line"
+     id="tspan3149"
+     x="210.87849"
+     y="45.385063">диаграммы</tspan></text>
+
+</g>
+
+   <g
+   id="gasmenu"
+   class="gasmap_aux"
+   transform="translate(0,-40)">
+       <text x="914" y="181" id="en-lang" style="fill: #093860; cursor: pointer; font-size: 12px;">Eng</text>
+       <text x="914" y="161" id="ru-lang" style="fill: #57C3EF; cursor: pointer; font-size: 12px;">Рус</text>
+       <g
+     class="gasmenuitem gasexp"
+     id="gasmenuexp"><g
+   class="gasmenudropdown gasexp"
+   id="gasmenuexpdown"
+   style="opacity:0"><path
+   d="m 506.085,271.96 -195,0 0,-80.37 195,0 0,80.37 z"
+   style="opacity:0.800003;fill:#093860;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.99;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="path5315" /><text
+   id="text5317"
+   x="365.7016"
+   y="218.18962"
+   style="font-size:12px"><tspan
+     id="tspan5319"
+     sodipodi:role="line"
+     y="218.18962"
+     x="365.70203 375.57202 383.552 387.78 394.59802 402.36801 409.56403 417.33398 425.34198 435.03003"
+     style="font-size:14px;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none">По трубам:</tspan><tspan
+     id="tspan5321"
+     sodipodi:role="line"
+     y="250"
+     x="365.70203 374.81601 379.04401 385.89001 397.18799 405.09799 416.396 423.99799 431.83801 439.67801 447.65802 457.34601 461.57404 469.19 477.09998 485.48599 493.08801"
+     style="font-size:14px;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     transform="translate(0,-12)">В сжиженном виде:</tspan></text>
+
+
+
+
+
+
+
+<path
+   d="m 365.7,226.98 58.502,0"
+   style="fill:none;stroke:#00ffff;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="path5333" /><path
+   d="m 424.071,229.61 c 1.453,0 2.631,-1.179 2.631,-2.632 0,-1.453 -1.178,-2.632 -2.631,-2.632 -1.453,0 -2.633,1.179 -2.633,2.632 0,1.453 1.18,2.632 2.633,2.632"
+   style="fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="path5337" /><path
+   d="m 365.7,258.11 58.502,0"
+   style="fill:none;stroke:#00ffff;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:2.5, 5.255;stroke-dashoffset:0"
+   id="path5341" /><path
+   d="m 424.071,260.75 c 1.453,0 2.631,-1.179 2.631,-2.632 0,-1.453 -1.178,-2.632 -2.631,-2.632 -1.453,0 -2.633,1.179 -2.633,2.632 0,1.453 1.18,2.632 2.633,2.632"
+   style="fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="path5345" /><path
+   d="m 347.009,246.81 c 0,-4.772 -3.867,-8.64 -8.641,-8.64 -4.771,0 -8.638,3.868 -8.638,8.64 0,4.772 3.867,8.64 8.638,8.64 4.774,0 8.641,-3.868 8.641,-8.64 z"
+   style="fill:none;stroke:#00ffff;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="path5349" /><path
+   class="gasexp gascheckboxtick gasspg"
+   d="m 335.513,247.19 2.701,2.823 3.012,-7.148"
+   style="fill:none;stroke:#ffffff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="gascheckboxtick2" /><path
+   d="m 347.009,214.78 c 0,-4.772 -3.867,-8.64 -8.641,-8.64 -4.771,0 -8.638,3.868 -8.638,8.64 0,4.772 3.867,8.64 8.638,8.64 4.774,0 8.641,-3.868 8.641,-8.64 z"
+   style="fill:none;stroke:#00ffff;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="path5357" /><path
+   class="gasexp gascheckboxtick gaspipe"
+   d="m 335.513,215.17 2.701,2.823 3.012,-7.148"
+   style="fill:none;stroke:#ffffff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="gascheckboxtick1" /><rect
+   class="gasexp gascheckboxrect gaspipe"
+   y="202.185"
+   x="326.357"
+   height="23.7544"
+   width="25.4116"
+   id="gascheckbox1"
+   style="opacity:0;fill:#ffffff;fill-opacity:1;stroke:none" /><rect
+   class="gasexp gascheckboxrect gasspg"
+   y="234.217"
+   x="324.794"
+   height="23.7544"
+   width="25.4116"
+   id="gascheckbox2"
+   style="opacity:0;fill:#ffffff;fill-opacity:1;stroke:none" /></g><path
+   id="path5259"
+   style="fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   d="m 506.085,153.59 -195,0 0,38 195,0 0,-38 z"
+   class="gasmenuitemback" /><text
+   class="gasmenutext"
+   id="text5261"
+   x="360.96078"
+   y="178.18962"
+   style="font-size:12px"><tspan
+     id="tspan5263"
+     sodipodi:role="line"
+     y="178.18962"
+     x="360.96078"
+     style="font-size:17px;fill-opacity:1;fill-rule:nonzero;stroke:none">ЭКСПОРТ ГАЗА</tspan></text>
+
+
+
+
+
+
+
+<path
+   class="gasmenuicon"
+   style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+   d="m 341.031,166.406 -4.969,4.969 -0.874,0.875 0.874,0.875 4.969,4.969 1.781,-1.75 -2.843,-2.844 13,0 0,-2.5 -13,0 2.843,-2.812 -1.781,-1.782 z m -13.093,2.344 c -1.938,0 -3.5,1.562 -3.5,3.5 0,1.938 1.562,3.5 3.5,3.5 1.937,0 3.531,-1.562 3.531,-3.5 0,-1.938 -1.594,-3.5 -3.531,-3.5 z"
+   id="path5275" /></g><g
+     class="gasmenuitem gasimp"
+     id="gasmenuimp"><g
+   class="gasmenudropdown gasexp"
+   id="gasmenuimpdown"
+   transform="translate(195.345,0)"
+   style="opacity:0"><path
+   d="m 506.085,271.96 -195,0 0,-80.37 195,0 0,80.37 z"
+   style="opacity:0.800003;fill:#093860;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.99;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="path5315-9" /><text
+   id="text5317-6"
+   x="365.7016"
+   y="218.18962"
+   style="font-size:12px"><tspan
+     id="tspan5319-2"
+     sodipodi:role="line"
+     y="218.18962"
+     x="365.7016"
+     style="font-size:14px;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none">По трубам:</tspan><tspan
+     id="tspan5321-7"
+     sodipodi:role="line"
+     y="250"
+     x="365.7016"
+     style="font-size:14px;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none">В сжиженном виде:</tspan></text>
+
+
+
+
+
+
+
+<path
+   d="m 365.7,226.98 58.502,0"
+   style="fill:none;stroke:#00ffff;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="path5333-7" /><path
+   d="m 424.071,229.61 c 1.453,0 2.631,-1.179 2.631,-2.632 0,-1.453 -1.178,-2.632 -2.631,-2.632 -1.453,0 -2.633,1.179 -2.633,2.632 0,1.453 1.18,2.632 2.633,2.632"
+   style="fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="path5337-0" /><path
+   d="m 365.7,258.11 58.502,0"
+   style="fill:none;stroke:#00ffff;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:2.5, 5.255;stroke-dashoffset:0"
+   id="path5341-4" /><path
+   d="m 424.071,260.75 c 1.453,0 2.631,-1.179 2.631,-2.632 0,-1.453 -1.178,-2.632 -2.631,-2.632 -1.453,0 -2.633,1.179 -2.633,2.632 0,1.453 1.18,2.632 2.633,2.632"
+   style="fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="path5345-5" /><path
+   d="m 347.009,246.81 c 0,-4.772 -3.867,-8.64 -8.641,-8.64 -4.771,0 -8.638,3.868 -8.638,8.64 0,4.772 3.867,8.64 8.638,8.64 4.774,0 8.641,-3.868 8.641,-8.64 z"
+   style="fill:none;stroke:#00ffff;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="path5349-4" /><path
+   class="gasimp gascheckboxtick gasspg"
+   d="m 335.513,247.19 2.701,2.823 3.012,-7.148"
+   style="fill:none;stroke:#ffffff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="gascheckboxtick4" /><path
+   d="m 347.009,214.78 c 0,-4.772 -3.867,-8.64 -8.641,-8.64 -4.771,0 -8.638,3.868 -8.638,8.64 0,4.772 3.867,8.64 8.638,8.64 4.774,0 8.641,-3.868 8.641,-8.64 z"
+   style="fill:none;stroke:#00ffff;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="path5357-4" /><path
+   class="gasimp gascheckboxtick gaspipe"
+   d="m 335.513,215.17 2.701,2.823 3.012,-7.148"
+   style="fill:none;stroke:#ffffff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   id="gascheckboxtick3" /><rect
+   class="gasimp gascheckboxrect gaspipe"
+   y="202.967"
+   x="327.45"
+   height="23.7544"
+   width="25.4116"
+   id="gascheckbox3"
+   style="opacity:0;fill:#ffffff;fill-opacity:1;stroke:none" /><rect
+   style="opacity:0;fill:#ffffff;fill-opacity:1;stroke:none"
+   id="gascheckbox4"
+   width="25.4116"
+   height="23.7544"
+   x="325.888"
+   y="235.779"
+   class="gasimp gascheckboxrect gasspg" /></g><path
+   id="path5243"
+   style="fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   d="m 701.085,153.59 -195,0 0,38 195,0 0,-38 z"
+   class="gasmenuitemback" /><path
+   class="gasmenuicon"
+   style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+   d="m 533.906,166.406 -1.781,1.782 2.844,2.812 -13,0 0,2.5 13,0 -2.844,2.844 1.781,1.75 4.969,-4.969 0.875,-0.875 -0.875,-0.875 -4.969,-4.969 z m 13.063,2.344 c -1.938,0 -3.5,1.562 -3.5,3.5 0,1.938 1.562,3.5 3.5,3.5 1.939,0 3.5,-1.562 3.5,-3.5 0,-1.938 -1.561,-3.5 -3.5,-3.5 z"
+   id="path5287" /><text
+   class="gasmenutext"
+   id="text5247-8"
+   x="561.79602"
+   y="178.1725"
+   style="font-size:12px"><tspan
+     id="tspan5249-6"
+     sodipodi:role="line"
+     style="font-size:17px;font-variant:normal;font-weight:500;font-stretch:normal;writing-mode:lr-tb;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     y="178.1725"
+     x="561.79602">ИМПОРТ ГАЗА</tspan></text>
+
+
+
+
+
+
+
+</g><g
+     class="gasmenuitem gaszapas"
+     id="gasmenuzapas"><path
+   id="path5245"
+   style="fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+   d="m 896.085,153.59 -195,0 0,38 195,0 0,-38 z"
+   class="gasmenuitemback" /><path
+   class="gasmenuicon"
+   style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;fill-opacity:1;stroke:none;stroke-width:2.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;"
+   d="m 719.688,163.344 0,1.25 0,16.312 0,1.25 1.25,0 16.312,0 1.25,0 0,-1.25 0,-16.312 0,-1.25 -1.25,0 -16.312,0 -1.25,0 z m 2.5,2.5 13.812,0 0,7.375 c -1.476,0.941 -4.082,1.854 -6.906,-0.969 -2.8,-2.799 -5.423,-1.932 -6.906,-1 l 0,-5.406 z"
+   id="path5297" /><text
+   class="gasmenutext"
+   id="text5247-2"
+   x="752"
+   y="178.18962"
+   style="font-size:12px"><tspan
+     id="tspan5249-1"
+     sodipodi:role="line"
+     style="font-size:17px;font-stretch:normal;writing-mode:lr-tb;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     x="752"
+     y="178.18962">ЗАПАСЫ ГАЗА</tspan></text>
+
+
+
+
+
+
+
+</g></g><g
+   class="gasmap_aux"
+   id="gaszoom"><path
+     id="path5125"
+     style="opacity:0.800003;fill:#093860;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+     d="m 94.227,582.821 -28.227,0 0,-162.247 28.227,0 0,162.247 z" /><path
+     id="path5129"
+     d="m 79.9062,431.906 a 1.87519,1.87519 0 0 0 -1.6562,1.906 l 0,4.532 -4.5625,0 a 1.87519,1.87519 0 1 0 0,3.75 l 4.5625,0 0,4.562 a 1.87519,1.87519 0 1 0 3.75,0 l 0,-4.562 4.5312,0 a 1.87519,1.87519 0 1 0 0,-3.75 l -4.5312,0 0,-4.532 a 1.87519,1.87519 0 0 0 -2.0938,-1.906 z"
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#5dc4ed;fill-opacity:1;stroke:none;stroke-width:3.75;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;" /><path
+     id="path5137"
+     style="fill:none;stroke:#5dc4ed;stroke-width:3.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+     d="m 73.6807,566.03 12.865,0" /><path
+     d="m 80.1136,484.966 0,0 m 0,19.302 0,0 m 0,19.302 0,0 m 0,19.302 0,0 m 0,-77.208 0,0"
+     style="fill:none;stroke:#5dc4ed;stroke-width:3.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     id="path5149-6" /><rect
+     style="opacity:0;fill:#ffffff;fill-opacity:1;stroke:none"
+     id="gaszoomplus"
+     width="25.4116"
+     height="23.7544"
+     x="67.3961"
+     y="428.915" /><rect
+     style="opacity:0;fill:#ffffff;fill-opacity:1;stroke:none"
+     id="gaszoomminus"
+     width="25.4116"
+     height="23.7544"
+     x="67.12"
+     y="554.316" /><path
+     id="gaszoomslider"
+     style="fill:none;stroke:#ffffff;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+     d="m 86.4609,542.872 c 0,-3.506 -2.842,-6.348 -6.348,-6.348 -3.506,0 -6.347,2.842 -6.347,6.348 0,3.506 2.841,6.348 6.347,6.348 3.506,0 6.348,-2.842 6.348,-6.348 z" /></g>
+   </g>
+
+ <g
+   id="chartMinMapCont"><g
+     id="chartMinimize"><path
+       id="chartMinRect"
+       style="fill:#00203f;fill-opacity:1;fill-rule:nonzero"
+       d="m -21.580214,18.809655 c -3.956368,0 -7.193396,-2.348172 -7.193396,-5.218161 l 0,-14.6108486 c 0,-2.8699882 3.237028,-5.2181604 7.193396,-5.2181604 l 43.160378,0 c 3.956368,0 7.193396,2.3481722 7.193396,5.2181604 l 0,14.6108486 c 0,2.869989 -3.237028,5.218161 -7.193396,5.218161 l -43.160378,0 z"
+       inkscape:connector-curvature="0" /><path
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill-opacity:1;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+       d="m -7.656275,3.137485 a 1.8751875,1.8751875 0 0 0 -1.25,3.1875 l 7.3125,8.5 0.0625,0.09375 a 1.8751875,1.8751875 0 0 0 0.03125,0.0625 l 0.09375,0.09375 a 1.8751875,1.8751875 0 0 0 0.03125,0.0625 1.8751875,1.8751875 0 0 0 0.03125,0 1.8751875,1.8751875 0 0 0 0.09375,0.125 1.8751875,1.8751875 0 0 0 0.0625,0.0625 1.8751875,1.8751875 0 0 0 0.09375,0.0625 1.8751875,1.8751875 0 0 0 0.125,0.0625 1.8751875,1.8751875 0 0 0 0.03125,0.03125 1.8751875,1.8751875 0 0 0 0.09375,0.0625 1.8751875,1.8751875 0 0 0 0.0625,0.03125 1.8751875,1.8751875 0 0 0 0.03125,0 1.8751875,1.8751875 0 0 0 0.15625,0.0625 1.8751875,1.8751875 0 0 0 0.03125,0 1.8751875,1.8751875 0 0 0 0.125,0.0625 1.8751875,1.8751875 0 0 0 0.0625,0 1.8751875,1.8751875 0 0 0 0.125,0.03125 1.8751875,1.8751875 0 0 0 0.0625,0 1.8751875,1.8751875 0 0 0 0.1875,0.03125 1.8751875,1.8751875 0 0 0 1.4375,-0.6875 1.8751875,1.8751875 0 0 0 0.15625,-0.15625 1.8751875,1.8751875 0 0 0 0.09375,-0.15625 l 7.25,-8.4375 a 1.8751875,1.8751875 0 1 0 -2.84375,-2.4375 l -6.09375,7.09375 -6.0625,-7.09375 a 1.8751875,1.8751875 0 0 0 -1.59375,-0.75 z"
+       id="chartMinTick"
+       inkscape:connector-curvature="0" /></g></g>
+ </svg>

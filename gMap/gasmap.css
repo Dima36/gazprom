@@ -1,0 +1,461 @@
+@font-face {
+	font-family: Leto Sans;
+	src: url("LetoSans.otf") format("opentype");
+}
+@font-face {
+    font-family: 'PF Agora Sans Pro Bold';
+    src: url('PTS75F.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'PF Agora Sans Pro Regular';
+    src: url('PTS55F.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PF Agora Sans Pro Medium';
+    src: url('PTC55F.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: PF Agora Sans Pro Medium;
+	margin: 0;
+	padding: 0;
+}
+
+#gasViz {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top:0px;
+	width:100%;
+	text-align: center;
+	background: #00213e;
+}
+#gasVizAll {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	position: relative;
+}
+#gasTopClose {
+	position: fixed;
+	top:0px;
+	opacity:0;
+	pointer-events:none;
+}
+#gasTopClose.active {
+	opacity:1;
+	pointer-events:all;
+}
+#gasMapCont {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+#gasMapSvg {
+	background: #ecf7fd;
+	margin: 0;
+	padding: 0;
+}
+#gasChart, #gasFooter {
+	margin: 0;
+	padding: 0;
+    display: inline-block;
+	position:relative;
+	width:100%;
+	background: #fff;
+}
+#gasChart1, #gasTreeMap, #gasSankey {
+	margin: 0;
+	padding: 0;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+#viz_menu text { opacity:0; pointer-events:none;}
+#viz_menu:hover text { opacity:1; }
+#viz_menu g { cursor:pointer; }
+#viz_menu_map g:hover { opacity:1; fill:#fff; }
+#gasmaptittle tspan {
+	font-family:Leto Sans;
+}
+#gasmenu text {
+	font-family:PF Agora Sans Pro Medium;
+	font-weight:500;
+	font-variant:normal;font-weight:500;
+}
+.gasmenuitem  {
+	cursor: pointer;
+}
+.gasmenuitem.active  tspan {
+	font-family:PF Agora Sans Pro Bold;
+	fill:#00213e;
+}
+.gasmenuicon {
+	fill:#5dc4ed;
+	stroke:none;
+}
+.gasmenuitem.active .gasmenuicon {
+	fill:#00213e;
+}
+.gasmenuitem text {
+	fill:#fff;
+}
+.gasmenuitem.active text {
+	fill:#00213e;
+}
+.gasmenuitemback {
+	fill:#093860;
+}
+.gasmenuitem.active .gasmenuitemback {
+	fill:#5dc4ed;
+}
+.gascheckboxtick {display:none;}
+.gascheckboxtick.active {display:inline;}
+.countries {
+	fill:#093860;
+	stroke:#09669D;
+	stroke-width:1;
+}
+.countries.active_exp {
+	stroke:#00FFFF;
+}
+.countries.active_imp {
+	stroke:#66FF33;
+}
+.countries.active_chart.active_exp {
+	fill:#4acaff;
+}
+.countries.active_chart {
+	fill:#4acaff;
+}
+.countries.active_chart.active_imp {
+	fill:#33ffcc;
+}
+.countries.active {
+	stroke:#fff;
+}
+.bubble_circle { cursor:pointer;}
+.exp_bubbles circle.bubble_circle {
+	stroke:none;
+	fill:#4acaff;
+	opacity: 0.8;
+}
+.exp_bubbles.active circle.bubble_circle, .exp_bubbles.hover circle.bubble_circle {
+	fill:#5dc4ed;
+	stroke: #00FFFF;
+	stroke-width:2px;
+	opacity: 1;
+}
+.imp_bubbles circle.bubble_circle {
+	stroke:none;
+	fill:#33ffcc;
+	opacity: 0.8;
+}
+.imp_bubbles.active circle.bubble_circle, .imp_bubbles.hover circle.bubble_circle {
+	fill:#33ffcc;
+	stroke: #fff;
+	stroke-width:2px;
+	opacity: 1;
+}
+.zapas_bubbles circle.bubble_circle  {
+	stroke:none;
+	fill:#fff;
+	opacity: 0.5;
+}
+.zapas_bubbles  { cursor:auto; }
+.zapas_bubbles.zapas_bubble_clickable { cursor:pointer; }
+.zapas_bubbles.active  circle.bubble_circle, circle.zapas_bubbles.hover circle.bubble_circle {
+	fill:#fff;
+	stroke: #fff;
+	opacity: 1;
+}
+.bubble4click {
+	opacity:0;
+	display:none;
+}
+.bubble4click.active {
+	opacity:0;
+	display:inline;
+	cursor:pointer;
+}
+.zapas_bubbles .bubble4click {
+	cursor:auto;
+}
+.zapas_bubble_clickable .bubble4click {
+	cursor:pointer;
+}
+.gas_arcs {
+	pointer-events:none;
+	stroke-width:1;
+	stroke-linecap: round;
+}
+.exp_arcs  {
+	stroke:#00FFFF;
+}
+.arrow_point {fill:#00FFFF; display:none; pointer-events:none;}
+.arrow_point.active {display:inline; pointer-events:none;}
+.imp_arcs  {
+	stroke:#66FF33;
+}
+.gas_arcs.arc_spg path { stroke-dasharray: 2 5; stroke-width:1.5;}
+.country_dot {
+	fill:#fff;
+	stroke:none;
+	display: none;
+	pointer-events:none;
+}
+.country_dot.active { display:inline;}
+.zapas_bubbles .country_dot {
+	fill:#fff;
+	stroke:none;
+	opacity:1 !important;
+}
+.exp_bubbles.active .country_dot {
+	fill:#00FFFF;
+	stroke-width:5;
+	stroke:#00FFFF;
+}
+.imp_bubbles.active .country_dot {
+	fill:#fff;
+	stroke-width:5;
+	stroke:#fff;
+}
+.zapas_bubbles.hover .country_dot {
+	fill:#888;
+	stroke-width:5;
+	stroke:#888;
+}
+.gasbubbles .country_label {display:none;}
+.gasbubbles.hover .country_label {display:inline;}
+/*.gasbubbles.active .country_label {display:inline;} */
+.country_label.label_name {
+	fill:#fff;
+	stroke:none;
+	font-size: 12px;
+	font-family: PF Agora Sans Pro Regular;
+	text-anchor:end;
+}
+.country_label.label_value {
+	fill:#093860;
+	stroke:none;
+	font-size: 12px;
+	font-family: PF Agora Sans Pro Bold;
+}
+.country_label.label_unit {
+	fill:#093860;
+	stroke:none;
+	font-size: 10px;
+	font-family: PF Agora Sans Pro Regular;
+}
+.country_label.label_name_rect {
+	fill:#093860;
+}
+.exp_bubbles .country_label.label_name_rect {
+	stroke: #00ffff;
+}
+.exp_bubbles .country_label.label_value_rect {
+	fill:#00ffff;
+	stroke: #00ffff;
+}
+.imp_bubbles .country_label.label_name_rect {
+	stroke: #fff;
+}
+.imp_bubbles .country_label.label_value_rect {
+	fill:#fff;
+	stroke: #fff;
+}
+.zapas_bubbles .country_label.label_name_rect {
+	stroke: #ccc;
+}
+.zapas_bubbles .country_label.label_value_rect {
+	fill:#ccc;
+	stroke: #ccc;
+}
+.gas_bar {
+	stroke-width: 7px;
+	stroke-linecap:square;
+}
+
+.gas_bar_exp {stroke: #00213e;}
+.gas_bar_imp {stroke: #027D6E;}
+.gas_bar_exp.active {stroke:#5dc4ed;}
+.gas_bar_imp.active {stroke:#92c01a;}
+.gas_bar2_exp  { stroke: #006699; }
+.gas_bar2_imp  { stroke: #31B78D; }
+.gas_bar2_exp.active {stroke:#5dc4ed;}
+.gas_bar2_imp.active {stroke:#92c01a;}
+.spg_bar_fill {
+	stroke: #fff;
+	stroke-width: 5px;
+	stroke-linecap:square;
+}
+.axe_rect {
+	stroke:none;
+	fill:#fff;
+}
+text.chart_axis  {
+	font-size: 13px;
+	fill:#00213e;
+	text-anchor:end;
+}
+.bar_clickable{ cursor: pointer; }
+text.chart_axis.active_exp, .chart_popup.chart_popup_exp { fill:#5dc4ed; }
+text.chart_axis.active_imp, .chart_popup.chart_popup_imp { fill:#92c01a; }
+text.chart_axis.active_zapas, .chart_popup.chart_popup_zapas { fill:#5dc4ed; }
+
+.chart_popup text {
+	font-size: 11px;
+	text-anchor:middle;
+}
+.chart_popup text.chart_popup1 { text-anchor:end;}
+.chart_popup text.chart_popup2 { text-anchor:start;}
+.chart_popup_exp text.chart_popup1 { fill:#00213e ;}
+.chart_popup_exp text.chart_popup2 { fill:#006699 ;}
+.chart_popup_imp text.chart_popup1 { fill:#027D6E ;}
+.chart_popup_imp text.chart_popup2 { fill:#31B78D ;}
+.chart_aux path {
+	stroke: #c5c5c6;
+	stroke-width:1;
+}
+.chart_caption1{
+	font-size: 15px;
+	fill: #00213e;
+	font-family: PF Agora Sans Pro Medium
+}
+.chart_caption2{
+	font-size: 15px;
+	fill:#9b9b9b;
+	font-family: PF Agora Sans Pro Medium
+}
+.chart_aux_path {
+	stroke:#c5c5c6;
+	stroke-width:1;
+}
+.chart_country {
+	font-size: 24px;
+	font-family: PF Agora Sans Pro Bold
+}
+.chart_country_exp {fill: #00213e;}
+.chart_country_imp {fill: #027D6E;}
+.chart_country2_exp  { fill: #006699; }
+.chart_country2_imp  { fill: #31B78D; }
+
+.chart_axe_path{
+	stroke:#393938;
+	stroke-width:1.5;
+	shape-rendering: crispEdges;
+}
+.gas_continent {
+	font-size: 15px;
+	font-family: PF Agora Sans Pro Medium;
+	fill:#9b9b9b;
+	text-anchor:end;
+}
+
+.sankey_node {
+  opacity: .5;
+  cursor:pointer;
+}
+.sankey_node:hover,.sankey_node.hover,.sankey_node.active {
+  opacity: 1;
+}
+.sankey_node rect {
+  fill: #1191c0;
+  shape-rendering: crispEdges;
+  stroke:none;
+}
+
+.sankey_node text {
+	font-family: PF Agora Sans Pro Regular;
+	font-size: 10px;
+	fill:#fff;
+}
+.sankey_link {
+  fill: none;
+  stroke: #abddf8;
+  stroke-opacity: .2;
+  cursor:pointer;
+}
+
+.sankey_link:hover {
+  stroke: #24abe2;
+  stroke-opacity: 1;
+}
+.sankey_link.hover {
+  stroke-opacity: 1;
+}
+.sankey_label {
+	font-family: PF Agora Sans Pro Regular;
+	font-size: 15px;
+ 	pointer-events: none;
+	fill:#fff;
+	text-anchor:middle;
+	text-shadow: 0px 0px 20px #00213e;
+}
+#gascompare text {font-family: PF Agora Sans Pro Regular;}
+#gascompare {pointer-events:none; opacity:0; transition: opacity 0.4s ease-out;}
+#gascompare.active {pointer-events:all; opacity:1; cursor: pointer; transition: opacity 0.4s ease-in;}
+#gascompare path {stroke:#5dc4ed; transition: stroke 0.3s ease-in;}
+#gascompare:hover path {stroke:#fff; transition: stroke 0.3s ease-in;}
+
+#gaszoomminus, #gaszoomplus { cursor:pointer;}
+#gasback { fill:#00213e;fill-opacity:1;fill-rule:nonzero;stroke:none;}
+#gasback2 { fill:#00213e;fill-opacity:1;fill-rule:nonzero;stroke:none;}
+#gaschartback { fill:#fff;fill-opacity:0.5;fill-rule:nonzero;stroke:none;}
+
+#chartMinimize {cursor: pointer;}
+#chartMinimize #chartMinTick { fill:#5dc4ed; }
+#chartMinimize:hover #chartMinTick { fill:#fff; }
+#chartMinMapCont #chartMinimize #chartMinRect { stroke:#5dc4ed; }
+#chartMinChartCont #chartMinimize #chartMinRect { stroke:none; }
+
+
+.tm_caption1, .tm_caption2{
+	font-size: 15px;
+	font-family: PF Agora Sans Pro Medium;
+	fill:#fff;
+}
+.tm_caption2 {text-anchor:end;}
+/*.chart_aux_path{stroke:#fff; stroke-width:1px;}*/
+.tmClose, .tmClose2 {cursor:pointer;}
+.tmClose path {fill:#fff; stroke:#fff; stroke-width:2px;}
+
+.tmClose2 {stroke:none;}
+.tmClose2 .closePath {fill:#00213e; opacity:1;}
+.tmClose2 .leftPath {opacity: 0}
+.tmClose2.leftArrow .closePath {opacity: 0}
+.tmClose2.leftArrow .leftPath {fill:#00213e; opacity:1;}
+.leftPath
+.tmClose:hover path, .tmClose2:hover .closePath, .tmClose2.leftArrow:hover .leftPath {fill:#5dc4ed; }
+.toSankey {cursor: pointer;}
+.toSankey rect {fill:#093860;stroke:#fff;stroke-width:1;}
+.toSankey:hover rect {fill:#fff;}
+.toSankey text {
+	font-size: 15px;
+	font-family: PF Agora Sans Pro Medium;
+	fill:#fff;
+}
+.toSankey:hover text {fill:#093860;}
+.toSankey path {fill:#5dc4ed; stroke:none;}
+.toSankey:hover path {fill:#093860;}
+.tm_node text {
+	font-family: PF Agora Sans Pro Medium;
+}
+.tm_node rect {
+	stroke:#00213e;
+	stroke-width:2px;
+}
+.tm_node .tm_value {font-family: PF Agora Sans Pro Regular; }
+.tm_node:hover .tm_value {display:inline;}
+.gas_share {cursor:pointer;}
+.gas_share path {fill:#00213e; transition: fill 0.3s ease-in;}
+.gas_share:hover path {fill:#5dc4ed; transition: fill 0.4s ease-out;}
+
+.mapMove {cursor:move;}

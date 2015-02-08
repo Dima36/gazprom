@@ -1,0 +1,117 @@
+@font-face {
+	font-family: Leto Sans;
+	src: url("LetoSans.otf") format("opentype");
+}
+
+#loadingDiv {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+}
+#fireDiv {
+    position: absolute;
+    width: 1200px;
+    height: 200px;
+    top: 50%;
+    left: 0px;
+    margin-left: 0px; /* margin is -0.5 * dimension */
+    margin-top: 00px;
+  color: #00213e;
+  background-color: rgba(256,256,256,.03);
+  background-image: -webkit-linear-gradient(top, # #1,110c0c0c);
+  background-image: -moz-linear-gradient(top, # #1,110c0c0c);
+  background-image: -ms-linear-gradient(top, # #1,110c0c0c);
+  background-image: -o-linear-gradient(top, # #1,110c0c0c);
+
+  font-family: 'Leto Sans';
+	font-size: 3em;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+  white-space:nowrap;
+  font-weight: bold;
+}
+
+.gasfire {
+  animation: animation 1s ease-in-out infinite alternate;
+  -moz-animation: animation 1s ease-in-out infinite alternate;
+  -webkit-animation: animation 1s ease-in-out infinite alternate;
+  -o-animation: animation 1s ease-in-out infinite alternate;
+}
+
+@keyframes animation
+{
+0% {text-shadow: 0 0 20px #89fcfe,
+  10px -10px 30px #75ecfe,
+  -20px -20px 40px #34aeff,
+  20px -40px 50px #1c96ec,
+  -20px -60px 60px #0686cd,
+  0 -80px 70px #165797,
+  10px -90px 80px #0e1b45;}
+100% {text-shadow: 0 0 20px #89fcfe,
+  10px -10px 30px #89fcfe,
+  -20px -20px 40px #75ecfe,
+  22px -42px 60px #34aeff,
+  -22px -58px 50px #1c96ec,
+  0 -82px 80px #0686cd,
+  10px -90px 80px  #165797;}
+}
+
+@-moz-keyframes animation
+{
+0% {text-shadow: 0 0 20px #89fcfe,
+  10px -10px 30px #75ecfe,
+  -20px -20px 40px #34aeff,
+  20px -40px 50px #1c96ec,
+  -20px -60px 60px #0686cd,
+  0 -80px 70px #165797,
+  10px -90px 80px #0e1b45;}
+100% {text-shadow: 0 0 20px #89fcfe,
+  10px -10px 30px #89fcfe,
+  -20px -20px 40px #75ecfe,
+  22px -42px 60px #34aeff,
+  -22px -58px 50px #1c96ec,
+  0 -82px 80px #0686cd,
+  10px -90px 80px  #165797;}
+}
+
+@-webkit-keyframes animation
+{
+0% {text-shadow: 0 0 20px #89fcfe,
+  10px -10px 30px #75ecfe,
+  -20px -20px 40px #34aeff,
+  20px -40px 50px #1c96ec,
+  -20px -60px 60px #0686cd,
+  0 -80px 70px #165797,
+  10px -90px 80px #0e1b45;}
+100% {text-shadow: 0 0 20px #89fcfe,
+  10px -10px 30px #c9fcfe,
+  -20px -20px 40px #75ecfe,
+  22px -42px 60px #34aeff,
+  -22px -58px 50px #1c96ec,
+  0 -82px 80px #0686cd,
+  10px -90px 80px  #165797;}
+}
+
+@-o-keyframes animation
+{
+0% {text-shadow: 0 0 20px #89fcfe,
+  10px -10px 30px #75ecfe,
+  -20px -20px 40px #34aeff,
+  20px -40px 50px #1c96ec,
+  -20px -60px 60px #0686cd,
+  0 -80px 70px #165797,
+  10px -90px 80px #0e1b45;}
+100% {text-shadow: 0 0 20px #89fcfe,
+  10px -10px 30px #c9fcfe,
+  -20px -20px 40px #75ecfe,
+  22px -42px 60px #34aeff,
+  -22px -58px 50px #1c96ec,
+  0 -82px 80px #0686cd,
+  10px -90px 80px  #165797;}
+}

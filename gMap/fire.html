@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML 5 FIRE</title>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script>
+	var canvas;
+	var context;
+	var flameWindLow = 1;
+	var flameWindMax = 200;
+	var flameWindDiff = (flameWindMax - flameWindLow) / 2;
+	var flameWiggle = 40;
+	var frames = 0;
+	var obj = new Array();
+	$(document).ready(function () {
+		canvas = document.getElementById('fire');
+		context = canvas.getContext('2d');
+		context.clearRect(0,0,canvas.width, canvas.height)
+	});
+	function Particle (speed,originX,originY) {
+		//Particle Class
+		this.life = rand(4,7);
+		this.step = speed + 1;
+		this.opacityAndSize = 0.1;
+		this.markDelete = 0;
+		this.originX = originX;
+		this.originY = originY;
+		this.speed = speed;
+		this.draw = function () {
+			context.beginPath();
+			var l1 = findPath(this.originX,this.originY,((canvas.width / 2) + (rand(flameWindLow,flameWindMax) - flameWindDiff)),0,this.step);
+			//console.log(this.originX,this.originY,this.originX,0,this.step);
+			if (l1[1] >= 0 && this.life >= 0 && this.opacityAndSize >= 0) {
+				//context.moveTo((l1[0] + (rand(1,flameWiggle) - (flameWiggle / 2))), l1[1]);
+				//var l2 = findPath(this.originX,this.originY,((canvas.width / 2) + (rand(flameWindLow,flameWindMax) - flameWindDiff)),0,(this.step - this.speed));
+				//console.log(l2);
+				//context.lineTo((l2[0] + (rand(1,flameWiggle) - (flameWiggle / 2))), l2[1]);
+				context.arc(l1[0],l1[1],(250 * this.opacityAndSize),0,Math.PI*2,true);
+				//context.closePath();
+				context.fillStyle='rgba('+rand(50,100)+','+rand(100,150)+','+rand(200,255)+','+this.opacityAndSize+')';
+				context.fill();
+				this.originX=l1[0];
+				this.step += this.speed;
+				this.opacityAndSize -= 0.01;
+				this.life--;
+			}
+			else {
+				var temp = new Particle(rand(1,60),rand(1,canvas.width),canvas.height);
+				obj.push(temp);
+				this.markDelete = 1;
+			}
+		}
+	}
+	function findPath (x1,y1,x2,y2,step) {
+			var x3 = x2 - x1; var y3 = y2 - y1;
+			var length = Math.sqrt(((x3 * x3) + (y3 * y3)));
+			x3 /= length; y3 /= length;
+			x3 *= step;	y3 *= step;
+			x3 += x1; y3 += y1;
+			return [x3,y3];
+	}
+	function rand (l,h) {
+		//Find a random number between l and h
+		var rand = Math.floor((Math.random() * h) + 1);
+		while (rand < l) rand = Math.floor((Math.random() * h) + 1);
+		return rand;
+	}
+	function createParticles () {
+		//Create first time particles
+		for (i = 1; i <= 1000; i++) {
+
+				var temp = new Particle(rand(1,60),rand(1,canvas.width),canvas.height);
+				obj.push(temp);
+			obj.push(temp);
+		}
+	}
+	function loop () {
+		frames++;
+		canvas.width = canvas.width;
+		var len = obj.length;
+			for(var i=0; i < len; i++) {
+
+					if (obj[i].markDelete != 1) {
+						obj[i].draw();
+					}
+					else { obj.splice(i,1); i--; len--;};
+			}
+		$('#frames').html(frames);
+		setTimeout(function () { loop(); },10);
+	}
+
+  </script>
+  <body bgcolor="white">
+    <canvas id="fire" width="300" height="400">You do not have canvas </canvas>
+	<br /> <div id="frames"></div> <input type="submit" value="Start Animation" onclick="createParticles();loop();" />
+
+  </body>
+</html>
+
+
