@@ -956,7 +956,7 @@ gMap={
 				.attr('y1',function(d){return -y(d.sum);});
 			gasBars.append('svg:text').attr("class", "chart_axis")
 				.attr({x:0,y:16,dy:'4px',transform:function(d){ return 'rotate(-90,0,'+d3.select(this).attr('y')+')'; }})
-				.text(function(d){return gMap.isEng ? gMap.ruNames[d.country] : gMap.enNames[d.country];});
+				.text(function(d){return gMap.isEng ? gMap.enNames[d.country] : gMap.ruNames[d.country];});
 			gas.append('line').attr({x1:-gMap.chart.margins.axis,y1:-4,x2:x1+gMap.chart.margins.axis,y2:-4,class:"chart_axe_path"});
 			gMap.splitNames(gasBars);
 		}
