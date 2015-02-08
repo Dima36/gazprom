@@ -50,7 +50,11 @@ gMap={
 		mapMode:'exp',
 		mapModes:['exp','imp','zapas'],
 		pipeMode:['pipe','spg'],
-		mapModeNames:{'exp':'Экспорт газа','imp':'Импорт газа','zapas':'Запасы газа'},
+		mapModeNames:{
+            'exp':'Экспорт газа',
+            'imp':'Импорт газа',
+            'zapas':'Запасы газа'
+        },
 		countries:[],
 		ruNames:{
 			'Other':'Другие страны',
@@ -71,6 +75,14 @@ gMap={
 			'2':'АЗИЯ',
 			'3':'АМЕРИКА',
 			'4':'АФРИКА',
+			'5':' ',
+			'6':' '
+		},
+        contNamesEn:{
+			'1':'EUROPE',
+			'2':'ASIA',
+			'3':'AMERICA',
+			'4':'AFRICA',
 			'5':' ',
 			'6':' '
 		},
@@ -610,7 +622,7 @@ gMap={
 				return +7;})
 			.attr('dy',function(d){ return -10-5.5;});
 		gMap.map[type].selectAll('g').append('svg:text').attr('class','country_label label_unit')
-			.text('млрд м³')
+			.text(gMap.isEng ? 'bln м³' : 'млрд м³')
 			.attr('dx',function(d){
 				return +7;})
 			.attr('dy',function(d){ return -10-6+11;});
@@ -938,7 +950,7 @@ gMap={
 			var spg=chart.append('g')
 				.attr('transform','translate('+(left+(gasArr.length==0 ? 0 : chartsGap+x1+x1delta))+','+(y1+4)+')');
 			spg.append('text').attr({x:-26-xDelta,y:35-(y1+4),class:'chart_caption1 spg_chart_caption'}).text(gMap.mapMode=='exp' ? gMap.isEng ? 'EXPORT' : 'ЭКСПОРТ' : gMap.isEng ? 'IMPORT' : 'ИМПОРТ');
-			spg.append('text').attr({x:-26-xDelta,y:53-(y1+4),class:'chart_caption1 spg_chart_caption'}).text(gMap.isEng ? '????' : 'СЖИЖЕННОГО ГАЗА');
+			spg.append('text').attr({x:-26-xDelta,y:53-(y1+4),class:'chart_caption1 spg_chart_caption'}).text(gMap.isEng ? 'LIQUID GAS' : 'СЖИЖЕННОГО ГАЗА');
 			spg.append('text').attr({x:-26-xDelta,y:81-(y1+4),class:'chart_caption2 spg_chart_caption'}).text(gMap.isEng ? 'bln м³' : 'млрд м³');
 			spg.append('path').attr({d:"m -"+(34+xDelta)+",-150 0,150",class:"chart_aux_path"});
 
@@ -1140,7 +1152,7 @@ gMap={
 				var xi=1;
 				for (var ii=0;ii<i;ii++) xi+=cont[ii].value;
 				return left+(xi+d.value/2-0.5)*barsGap;
-			}}).text(function(d){return d.value>1 ? gMap.contNames[d.key] : ''});
+			}}).text(function(d){return d.value>1 ? gMap.isEng ? gMap.contNamesEn[d.key] : gMap.contNames[d.key] : ''});
 		cont.splice(cont.length-1,1);
 		var xx=0,xxx;
 		cont.forEach(function(d){

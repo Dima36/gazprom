@@ -160,8 +160,8 @@
    id="gasmenu"
    class="gasmap_aux"
    transform="translate(0,-40)">
-       <text x="914" y="181" id="en-lang" style="fill: #57C3EF; cursor: pointer; font-size: 12px;">Eng</text>
-       <text x="914" y="161" id="ru-lang" style="fill: #093860; cursor: pointer; font-size: 12px;">Рус</text>
+       <text x="914" y="181" id="en-lang" style="fill: #093860; cursor: pointer; font-size: 12px;">Eng</text>
+       <text x="914" y="161" id="ru-lang" style="fill: #57C3EF; cursor: pointer; font-size: 12px;">Рус</text>
        <g
      class="gasmenuitem gasexp"
      id="gasmenuexp"><g
