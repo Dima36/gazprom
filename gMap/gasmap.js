@@ -69,6 +69,19 @@ gMap={
 			'Other Africa':'Остальная  Африка',
 			'Other Asia Pacific':'Остальная  ЮВА'
 		},
+        enNames:{
+			'Other':'Other',
+			'Other Europe':'Other Europe',
+			'Other South and Cental America':'Other South and Cental America',
+			'Other S. and Cent. America':'Other S. and Cent. America',
+			'Other S. and Central America':'Other S. and Central America',
+			'Other Europe and Eurasia':'Other Europe and Eurasia',
+			'Middle East':'Middle East',
+			'Other Former Soviet Union':'Other Former Soviet Union',
+			'Other Middle East':'Other Middle East',
+			'Other Africa':'Other Africa',
+			'Other Asia Pacific':'Other Asia Pacific'
+		},
 		continents:{},
 		contNames:{
 			'1':'ЕВРОПА',
@@ -400,7 +413,7 @@ gMap={
 		var url=document.URL,
 			title=document.title,
 			img='gMap/screenshot.png',
-			desc='Кто, кому, у кого и сколько газа продает и покупает';
+			desc=gMap.isEng ? 'Who, to whom, from whom, and how much gas buys and sells' : 'Кто, кому, у кого и сколько газа продает и покупает';
 
 		d3.select('#shareFB').on('click',function(){
 			//var url='http://www.facebook.com/sharer.php';
@@ -515,7 +528,8 @@ gMap={
 							gMap.data.imp[c].from[d.SHORT_NAME].coords=[+d.LONG2,+d.LAT2];
 					if(gMap.data.zapas[d.SHORT_NAME])
 						gMap.data.zapas[d.SHORT_NAME].coords=[+d.LONG,+d.LAT];
-					gMap.ruNames[d.SHORT_NAME]=gMap.isEng ? d.SHORT_NAME : d.RU_NAME;
+					gMap.ruNames[d.SHORT_NAME]=d.RU_NAME;
+                    gMap.enNames[d.SHORT_NAME]=d.SHORT_NAME;
 
 					gasworld.objects.countries.geometries.forEach(function(g){
 						if (g.properties.ISO2==d.ISO3136&&g.id!=d.SHORT_NAME) console.log(g.id,d.SHORT_NAME);
@@ -612,7 +626,7 @@ gMap={
 		gMap.map[type].selectAll('g').filter(function(d){return gMap.map.scale[type](d.sum)<12; }).append('circle').attr('r',12).attr('class','bubble4click');
 		gMap.map[type].selectAll('g').append('circle').attr('r',1.5).attr('class','country_dot');
 		gMap.map[type].selectAll('g').append('svg:text').attr('class','country_label label_name')
-			.text(function(d) {return gMap.ruNames[d.name]; })
+			.text(function(d) {return gMap.isEng ? gMap.enNames[d.name] : gMap.ruNames[d.name]; })
 			.attr('dx',function(d){
 				return -8;})
 			.attr('dy',function(d){ return -10-6;});
@@ -849,7 +863,7 @@ gMap={
 						//if (typeof gMap.continents[a.country] == "undefined") console.log(a.country)
 						if (gMap.continents[a.country]>gMap.continents[b.country]) return 1;
 						if (gMap.continents[a.country]<gMap.continents[b.country]) return -1;
-						var res=(gMap.ruNames[a.country])>(gMap.ruNames[b.country]);
+						var res=(gMap.isEng ? gMap.enNames[a.country] : gMap.ruNames[a.country])>(gMap.isEng ? gMap.enNames[b.country] : gMap.ruNames[b.country]);
 						return res ? 1 : -1;
 					})
 					//console.log(arr,d3.entries(cont));
@@ -867,7 +881,7 @@ gMap={
 					//if (typeof gMap.continents[a.country] == "undefined") console.log(a.country)
 					if (gMap.continents[a.country]>gMap.continents[b.country]) return 1;
 					if (gMap.continents[a.country]<gMap.continents[b.country]) return -1;
-					var res=(gMap.ruNames[a.country])>(gMap.ruNames[b.country]);
+					var res=(gMap.isEng ? gMap.enNames[a.country] : gMap.ruNames[a.country])>(gMap.isEng ? gMap.enNames[b.country] : gMap.ruNames[b.country]);
 					return res ? 1 : -1;
 				})
 				//console.log(arr);
@@ -903,7 +917,7 @@ gMap={
 				.range([0, gMap.chart.svgSize.height-gMap.chart.margins.top-gMap.chart.margins.bottom]);
 		chart.append('text').attr({x:55,y:35,class:'chart_captions1'}).text(gMap.isEng ? 'COUNTRY' : 'СТРАНА');
 		chart.append('path').attr({d:"m 46,26 0,95",class:'chart_aux_path'});
-		chart.append('text').attr({x:46,y:y1,class:'chart_country chart_country_'+gMap.mapMode}).text(gMap.ruNames[gMap.countries[0]]);
+		chart.append('text').attr({x:46,y:y1,class:'chart_country chart_country_'+gMap.mapMode}).text(gMap.isEng ? gMap.enNames[gMap.countries[0]] : gMap.ruNames[gMap.countries[0]]);
 		if (gasArr.length>0) {
 			var gas=chart.append('g')
 				.attr('transform','translate('+left+','+(y1+4)+')');
@@ -942,7 +956,7 @@ gMap={
 				.attr('y1',function(d){return -y(d.sum);});
 			gasBars.append('svg:text').attr("class", "chart_axis")
 				.attr({x:0,y:16,dy:'4px',transform:function(d){ return 'rotate(-90,0,'+d3.select(this).attr('y')+')'; }})
-				.text(function(d){return gMap.ruNames[d.country];});
+				.text(function(d){return gMap.isEng ? gMap.ruNames[d.country] : gMap.enNames[d.country];});
 			gas.append('line').attr({x1:-gMap.chart.margins.axis,y1:-4,x2:x1+gMap.chart.margins.axis,y2:-4,class:"chart_axe_path"});
 			gMap.splitNames(gasBars);
 		}
@@ -983,7 +997,7 @@ gMap={
 				.attr('y1',function(d){return -y(d.sum);})
 			spgBars.append('svg:text').attr("class", "chart_axis")
 				.attr({x:0,y:16,dy:'4px',transform:function(d){ return 'rotate(-90,0,'+d3.select(this).attr('y')+')'; }})
-				.text(function(d){return gMap.ruNames[d.country];});
+				.text(function(d){return gMap.isEng ? gMap.enNames[d.country] : gMap.ruNames[d.country];});
 			spg.append('line').attr({x1:-gMap.chart.margins.axis,y1:-4,x2:x2+gMap.chart.margins.axis,y2:-4,class:"chart_axe_path"});
 			gMap.splitNames(spgBars);
 		}
@@ -1013,8 +1027,8 @@ gMap={
 
 		chart.append('text').attr({x:55,y:35,class:'chart_captions1'}).text(gMap.isEng ? 'COUNTRY' : 'СТРАНА');
 		chart.append('path').attr({d:"m 46,26 0,95",class:'chart_aux_path'});
-		chart.append('text').attr({x:46,y:y1,class:'chart_country chart_country_'+gMap.mapMode}).text(gMap.ruNames[gMap.countries[0]]);
-		chart.append('text').attr({x:46,y:y1-30,class:'chart_country chart_country2_'+gMap.mapMode}).text(gMap.ruNames[gMap.countries[1]]);
+		chart.append('text').attr({x:46,y:y1,class:'chart_country chart_country_'+gMap.mapMode}).text(gMap.isEng ? gMap.enNames[gMap.countries[0]] : gMap.ruNames[gMap.countries[0]]);
+		chart.append('text').attr({x:46,y:y1-30,class:'chart_country chart_country2_'+gMap.mapMode}).text(gMap.isEng ? gMap.enNames[gMap.countries[1]] : gMap.ruNames[gMap.countries[1]]);
 		chart.append('text').attr({x:258,y:35,class:'chart_caption1'}).text(gMap.mapMode=='exp' ? gMap.isEng ? 'GAS EXPORT,' : 'ЭКСПОРТ ГАЗА,' : gMap.isEng ? 'GAS IMPORT,' : 'ИМПОРТ ГАЗА,');
 		chart.append('text').attr({x:380,y:35,class:'chart_caption2'}).text(gMap.isEng ? 'bln м³' : 'млрд м³');
 		chart.append('path').attr({d:"m 250,26 0,150",class:'chart_aux_path'});
@@ -1061,7 +1075,7 @@ gMap={
 
 		gasBars.append('svg:text').attr("class", "chart_axis chart_"+gMap.mapMode)
 			.attr({x:0,y:25,dy:'4px',transform:function(d){ return 'rotate(-90,0,'+d3.select(this).attr('y')+')'; }})
-			.text(function(d){return gMap.ruNames[d.country];})
+			.text(function(d){return gMap.isEng ? gMap.enNames[d.country] : gMap.ruNames[d.country];})
 
 		gMap.splitNames(gasBars);
 
@@ -1133,7 +1147,7 @@ gMap={
 
 		gasBars.append('svg:text').attr("class", "chart_axis")
 			.attr({x:0,y:25,dy:'4px',transform:function(d){ return 'rotate(-90,0,'+d3.select(this).attr('y')+')'; }})
-			.text(function(d){return gMap.ruNames[d.country];});
+			.text(function(d){return gMap.isEng ? gMap.enNames[d.country] : gMap.ruNames[d.country];});
 
 		gMap.splitNames(gasBars);
 
@@ -1161,10 +1175,10 @@ gMap={
 	},
 	splitNames:function(bars){
 		bars
-			.filter(function(d){ return gMap.ruNames[d.country].split(' ').length>2})
+			.filter(function(d){ return gMap.isEng ? gMap.enNames[d.country].split(' ').length>2 : gMap.ruNames[d.country].split(' ').length>2})
 			.select('text')
 			.attr({dy:-3}).text(function(d){
-				var words=gMap.ruNames[d.country].split(' ');
+				var words=gMap.isEng ? gMap.enNames[d.country].split(' ') : gMap.ruNames[d.country].split(' ');
 				var text2='';
 				for (var ii=2; ii<words.length; ii++) text2+=' '+words[ii];
 				d3.select(this.parentNode.appendChild(this.cloneNode())).text(text2).attr('dy',10);
@@ -1281,7 +1295,7 @@ gMap={
 		['exp','imp'].forEach(function(d){
 			var data=d3.entries(gMap.data[d])
 									.filter(function(d){ return d.value.sum>2.5; })
-									.map(function(d){  return {name:(gMap.ruNames[d.key]),country:d.key,size:(d.value.sum)}})
+									.map(function(d){  return {name:(gMap.isEng ? gMap.enNames[d.key] : gMap.ruNames[d.key]),country:d.key,size:(d.value.sum)}})
 			gMap.initTreeMap(d,{name:'export',
 								children: data })
 		})
@@ -1394,13 +1408,13 @@ gMap={
 
 		for (c in imp) {
 			if (imp[c].sum>0) {
-				data.nodes.push({name:gMap.ruNames[c],sum:imp[c].sum,i:i})
+				data.nodes.push({name:gMap.isEng ? gMap.enNames[c] : gMap.ruNames[c],sum:imp[c].sum,i:i})
 				imp[c].i=i++;
 			}
 		}
 		for (c in exp) {
 			if (exp[c].sum>0) {
-				data.nodes.push({name:gMap.ruNames[c],sum:exp[c].sum,i:i})
+				data.nodes.push({name:gMap.isEng ? gMap.enNames[c] : gMap.ruNames[c],sum:exp[c].sum,i:i})
 				exp[c].i=i++;
 			}
 				//data.links.push({source: exp[c].i, target: imp[cc].i, value: exp[c].to[cc].sum})
