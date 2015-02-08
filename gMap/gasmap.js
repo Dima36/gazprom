@@ -515,7 +515,7 @@ gMap={
 							gMap.data.imp[c].from[d.SHORT_NAME].coords=[+d.LONG2,+d.LAT2];
 					if(gMap.data.zapas[d.SHORT_NAME])
 						gMap.data.zapas[d.SHORT_NAME].coords=[+d.LONG,+d.LAT];
-					gMap.ruNames[d.SHORT_NAME]=d.RU_NAME;
+					gMap.ruNames[d.SHORT_NAME]=gMap.isEng ? d.SHORT_NAME : d.RU_NAME;
 
 					gasworld.objects.countries.geometries.forEach(function(g){
 						if (g.properties.ISO2==d.ISO3136&&g.id!=d.SHORT_NAME) console.log(g.id,d.SHORT_NAME);
